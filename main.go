@@ -18,7 +18,11 @@ func main() {
 	// fmt.Println(result)
 	// ===============================
 
-	x := -12222221
-	fmt.Println("É palindromo: ", easy.IsPalindrome(x))
+	// x := -12222221
+	// fmt.Println("É palindromo: ", easy.IsPalindrome(x))
+
+	// =====================================================
+	s := "IV"
+	fmt.Println(easy.RomanToInt(s))
 
 }
