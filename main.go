@@ -22,7 +22,11 @@ func main() {
 	// fmt.Println("É palindromo: ", easy.IsPalindrome(x))
 
 	// =====================================================
-	s := "IV"
-	fmt.Println(easy.RomanToInt(s))
+	// s := "IV"
+	// fmt.Println(easy.RomanToInt(s))
+
+	// =====================================================
+	strs := []string{"flower", "flower", "flower", "flower"}
+	fmt.Println("Prefixo:", easy.LongestCommonPrefix(strs))
 
 }
