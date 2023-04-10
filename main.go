@@ -26,7 +26,11 @@ func main() {
 	// fmt.Println(easy.RomanToInt(s))
 
 	// =====================================================
-	strs := []string{"flower", "flower", "flower", "flower"}
-	fmt.Println("Prefixo:", easy.LongestCommonPrefix(strs))
+	// strs := []string{"flower", "flower", "flower", "flower"}
+	// fmt.Println("Prefixo:", easy.LongestCommonPrefix(strs))
+
+	// =====================================================
+	stringValid := "()[]{}"
+	fmt.Println("É uma string valida?", easy.IsValid(stringValid))
 
 }
