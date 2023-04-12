@@ -2,7 +2,6 @@ package main
 
 import (
 	"desafios/easy"
-	"fmt"
 )
 
 func main() {
@@ -30,7 +29,25 @@ func main() {
 	// fmt.Println("Prefixo:", easy.LongestCommonPrefix(strs))
 
 	// =====================================================
-	stringValid := "()[]{}"
-	fmt.Println("É uma string valida?", easy.IsValid(stringValid))
+	// stringValid := "()[]{}"
+	// fmt.Println("É uma string valida?", easy.IsValid(stringValid))
+
+	// =====================================================
+	list1 := &easy.ListNode{Val: 1}
+	current := list1
+	current.Next = &easy.ListNode{Val: 2}
+	current = current.Next
+	current.Next = &easy.ListNode{Val: 4}
+
+	list2 := &easy.ListNode{Val: 1}
+	current = list2
+	current.Next = &easy.ListNode{Val: 3}
+	current = current.Next
+	current.Next = &easy.ListNode{Val: 4}
+
+	easy.MergeTwoLists(list1, list2)
+	easy.PrintLinkedList(list1)
+
+	// =====================================================
 
 }
