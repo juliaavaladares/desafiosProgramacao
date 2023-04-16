@@ -2,6 +2,7 @@ package main
 
 import (
 	"desafios/easy"
+	"fmt"
 )
 
 func main() {
@@ -49,5 +50,14 @@ func main() {
 	easy.PrintLinkedList(list1)
 
 	// =====================================================
+
+	nums := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4} // Input array
+	expectedNums := []int{0, 1, 2, 3, 4}        // The expected answer with correct length
+
+	lenght := easy.RemoveDuplicates(nums)
+
+	fmt.Println("São do mesmo tamanho?", len(expectedNums) == lenght)
+	fmt.Println("Expected list:", expectedNums)
+	fmt.Println("Actual list:", nums)
 
 }
